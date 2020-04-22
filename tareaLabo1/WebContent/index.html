@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1"/>
+	<title>Login - Lab01-NCapas</title>
+	<style>
+		body{
+			margin:0;
+			padding:0;
+			border:0;
+			background-color:#fafafa;
+		}
+		form{
+			display:block;
+			width:300px;
+			min-height:150px;
+			margin:auto;
+			margin-top:30px;
+			background-color:#fff;
+			padding: 10px;
+			border:1px #ddd solid;
+			border-radius:5px;
+		}
+		form h3{
+			margin: 3px 0;
+			padding: 0;
+		}
+		form label{
+			display:inline-block;
+			min-width:85px;
+		}
+		form input{
+			min-width:180px;
+			display:inline-block;
+			margin-bottom:10px;
+			padding: 3px;
+			border:1px #ddd solid;
+			border-radius:3px;
+			font-size:14px;
+		}
+	</style>
+</head>
+<body>
+	<form action='MainServlet' method='post' class='form-control'>
+		<h3>Login</h3>
+		
+		<label for='username'>Username</label>
+		<input type='text' name='username' placeholder='Username' id='username'/>
+		<br/>
+		
+		<label for='password'>Password</label>
+		<input type='password' name='password' placeholder='Password' id='password'/>
+		<br/>
+		
+		<button type='submit'>
+			Login
+		</button>
+		<br/>
+		<p>Username <b>ncapas</b> y Password <b>1234</b></p>
+	</form>
+</body>
+</html>
